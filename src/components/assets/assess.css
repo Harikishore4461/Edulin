@@ -1,0 +1,53 @@
+.card {
+    padding: 20px;
+    background-color: aliceblue;
+}
+.ans-card {
+    background-color: ghostwhite;
+}
+
+.assess-title {
+    text-align: center;
+}
+
+.assess-body {
+    display: flex;
+
+}
+.card-body h6 {
+    margin: auto;
+}
+.options_con {
+    display: block;
+    margin: auto;
+    width: 40%;
+}
+.options {
+    margin:10px 0px;
+    padding: 0;
+}
+.options label {
+    margin: 0;
+    padding: 0;
+
+}
+
+.submit_btn {
+    display: grid;
+    margin: 30px;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* SCORE RESULT */
+
+.card-header {
+    text-align: center;
+}
+
+.score_course {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}

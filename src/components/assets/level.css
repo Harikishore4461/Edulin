@@ -1,0 +1,21 @@
+header , h2{
+    font-size: 30px;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin: 20px 0px;
+}
+
+.card {
+    height: auto;
+    width: 80%;
+    display: block;
+    justify-content: center;
+    margin: 30px auto;
+    background: whitesmoke;
+}
+p {text-transform: capitalize;}
+.ev-card {
+    background-color: aliceblue;
+}
+
+

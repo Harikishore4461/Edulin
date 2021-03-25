@@ -1,0 +1,129 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.main {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  background-color: aliceblue;
+  overflow: hidden;
+}
+
+.signup {
+  flex: 0.5;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+.signin {
+  flex: 0.5;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: auto;
+  align-items: center;
+  justify-content: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  width: 100%;
+
+}
+
+input {
+  margin: 40px auto;
+  width: 50%;
+  border: 0px solid transparent;
+  background-color: transparent;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.267);
+  outline: none;
+  padding: 5px;
+}
+
+input::placeholder {
+  font-size: 18px;
+
+}
+
+.image {
+  position: absolute;
+  z-index: 2;
+  left: unset;
+  display: block;
+  /* clip-path: polygon(100% 100%, 0% 100%, 0% 0%, 85% 0%); */
+  /* clip-path: polygon(100% 100%, 0% 100%, 20% 0%, 100% 0%); */
+  width: 55%;
+  height: 100%;
+  /* background: url('bg.jpg'); */
+  background-size: cover;
+  object-fit: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  transition: all 0.75s;
+}
+
+.image img {
+  height: 100vh;
+}
+
+h1 {
+  font-size: 30px;
+  font-family: sans-serif;
+  font-weight: 300;
+}
+
+input:focus {
+  border-bottom: 2px solid #75a7ff;
+}
+
+.submit-btn {
+  display: block;
+  width: 50%;
+  height: 50%;
+  margin: 20px auto;
+  background-color: #0c6ef7d8;
+  color: white;
+  outline: none;
+  border: 1px solid transparent;
+  box-shadow: 6px 5px 10px 5px rgba(20, 1, 1, 0.253);
+  font-size: 16px;
+  cursor: pointer;
+  transition: all .5s;
+}
+
+button:hover {
+  box-shadow: 0px 0px 0px 0px rgba(20, 1, 1, 0.253);
+
+}
+
+.switch {
+  display: grid;
+  margin-top: 30px;
+}
+
+h6 {
+  margin: 20px;
+}
+
+
+/* RESPONSIVE */
+
+@media only screen and (max-width: 600px) {
+  .image {
+    display: none;
+  }
+  .main {
+    display: block;
+  }
+  input , .submit-btn {
+    width: 60%;
+  }
+}

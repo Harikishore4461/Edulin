@@ -1,0 +1,38 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: url('bg.jpg');
+  background-size: cover;
+}
+
+.tag {
+    /* font-size: 12px; */
+    border: 1px solid gray;
+    border-radius: 1.5rem;
+    padding: 0.3em 0.7em;
+    margin: 5px 3px !important;
+    display: inline-block;
+    max-width: 100%;
+  }
+  
+  .tag > span {
+    display: inline-block;
+    max-width: 94%;
+    white-space: nowrap;
+    /* overflow: hidden; */
+    -ms-text-overflow: ellipsis;
+    -o-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+  }
+  
+  .tag a {
+    display: inline-block;
+    color: #bbb;
+    cursor: pointer;
+    opacity: 0.6;
+    margin: 0 0 0 0.3em;
+  }
+  
+  .tag a:hover {
+    opacity: 1.0;
+  }
